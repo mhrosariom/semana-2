@@ -8,76 +8,115 @@
   <title>Mi Perfil HTML</title>
 </head>
 
+
 <body>
+  <div class="content_img_profile"></div>
+
   <header>
-    <div class="content_img_profile">
-      <div class="img_profile">
-        <img src="/asset/20210622_yo.jpg" alt="Mi foto de perfil">
-      </div>
-
+    <div class="img_profile">
+      <img src="/asset/20210622_yo.jpg" alt="Mi foto de perfil">
     </div>
-
-    <div>
+    <div class="text-head">
       <h1>Marcos Rosario</h1>
-
-      <p>
-        <em>"Somos afortunados de contar con el mejor setup del mundo, cinco
-          sentidos integrados y capacidad de almacenamiento ilimitada para
-          crear lo que imaginemos"</em>
-      </p>
-
-      <p><strong>Marcos R.</strong></p>
     </div>
+    <p class="text-head">
+      <em>"Somos afortunados de contar con el mejor setup del mundo, cinco
+        sentidos integrados y capacidad de almacenamiento ilimitada para
+        crear lo que imaginemos"</em>
+    </p>
   </header>
 
   <main>
-    <div class="about">
-      <h2>Acerca de mi:</h2>
-
-      <p>
-        Me defino como una persona
-        <em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
-        incursionar y destacarme en múltiples campos laborales, desempeñándome
-        y relacionándome con todas las escalas jerárquicas de las
-        organizaciones a las que he pertenecido a lo largo de mi vida
-        profesional.
-      </p>
-
-      <p>
-        Mi proceso de desarrollo personal y profesional es un proyecto que se
-        mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
-        aplicación y reforzamiento lo cual disfruto mucho. Dentro del set de
-        habilidades blandas que me caracterizan puedo destacar la empatía, la
-        resiliencia, el pensamiento crítico y lógico en otras.
-      </p>
-    </div>
-
-    <h2>Estudios Formales:</h2>
-
-    <ul>
-      <li>
-        Técnico Superior Universitario en Higiene y Seguridad Indutrial.
-      </li>
-      <li>Histotecnólogo.</li>
-      <li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
-    </ul>
-
-    <h2>Otros Estudios:</h2>
-
-    <ul>
-      <li>Diseño Grafico.</li>
-      <li>Marketing.</li>
-      <li>Programación.</li>
-    </ul>
-
-    <h2>Tecnologías:</h2>
-
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Git</li>
-    </ul>
+    <section class="section-about">
+      <div class="about">
+        <h2>Acerca de mi:</h2>
+  
+        <p>
+          Me defino como una persona
+          <em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
+          incursionar y destacarme en múltiples campos laborales, desempeñándome
+          y relacionándome con todas las escalas jerárquicas de las
+          organizaciones a las que he pertenecido a lo largo de mi vida
+          profesional.
+        </p>
+  
+        <p>
+          Mi proceso de desarrollo personal y profesional es un proyecto que se
+          mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
+          aplicación y reforzamiento lo cual disfruto mucho. Dentro del set de
+          habilidades blandas que me caracterizan puedo destacar la empatía, la
+          resiliencia, el pensamiento crítico y lógico en otras.
+        </p>
+      </div>
+  
+      <h2>Estudios Formales:</h2>
+  
+      <ul>
+        <li>
+          Técnico Superior Universitario en Higiene y Seguridad Indutrial.
+        </li>
+        <li>Histotecnólogo.</li>
+        <li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
+      </ul>
+  
+      <h2>Otros Estudios:</h2>
+  
+      <ul>
+        <li>Diseño Grafico.</li>
+        <li>Marketing.</li>
+        <li>Programación.</li>
+      </ul>
+  
+      <h2>Tecnologías:</h2>
+  
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+    <section class="form-container">
+      <form id="form">
+        <h1 class="title-contact">Contactame</h1>
+        <div class="form-group">
+          <label for="name"> Nombre:
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="name"> Email:
+            <input type="email" id="email" name="email" placeholder="johndoe@mail.com" required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="phone"> Télefono:
+            <input type="tel" id="phone" name="phone" placeholder="+58 414 3248866">
+            <span class="help">(Opcional)</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend>Tipo de Proyecto:</legend>
+            <input type="checkbox" id="website" name="website"><label for="wesite">Página Web</label>
+            <input type="checkbox" id="webapp" name="webapp"><label for="webapp">Aplicación Web</label>
+            <input type="checkbox" id="design" name="design"><label for="diseño">Diseño Gráfico</label>
+          </fieldset>
+        </div>
+        <label for="description"> Descripción:
+          <div class="form-group">
+            <textarea name="description id=" description" rows="5"></textarea>
+          </div>
+        </label>
+        <div class="form-group">
+          <div class="terms">
+            <input type="checkbox">
+            <span>Acepto los términos y condiciones</span>
+          </div>
+          <button>Enviar</button>
+        </div>
+      </form>
+    </section>
   </main>
 </body>
 
