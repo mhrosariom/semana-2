@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 
-html, input, textarea {
+body, input, textarea {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -10,23 +10,28 @@ html, input, textarea {
 	box-sizing: inherit;
 }
 
+/* ENCABEZADO */
+
 body {
 	background-color: rgb(72, 72, 72);
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	color: #f1f4f3;
 	position: absolute;
 	z-index: 1;
-	padding: 3em 1em;
 }
 
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	text-wrap:balance;
 	width: 100%;
 	padding: 0 1em;
 	line-height: 1.5;
 	z-index: 4;
+	background: linear-gradient(#000000, transparent);
+	padding-top: 50px;
 }
 
 .content_img_profile {
@@ -34,7 +39,7 @@ header {
 	height: 100%;
 	left:0;
 	top: 0;
-	background-image: url(/asset/tecnologia-primer-plano.jpg);
+	background-image: url(/asset/tecnologia-primer-plano-placa-base.jpg);
 	opacity: .3;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -57,8 +62,7 @@ header {
 }
 
 .text-head {
-	font-size: 1.5em;
-	font-weight: 1em;
+	font-size: 1.5rem;
 	position: relative;
 	z-index: 5;
 }
@@ -78,26 +82,34 @@ main {
 	width: 40%;
 	line-height: 1.5rem;
 	z-index: 6;
-	font-size: 1.3em;
+	font-size: 1.2rem;
+	margin-top: 10px;
+}
+
+.about {
+	margin-bottom: 80px;
 }
 
 /* FORMULARIO */
 
 .form-container {
-	width: 40%;
+	max-width: 50%;
 	z-index: 6;
 	font-size: 1.3em;
 }
 
 .form-group {
-	width: 100%;
-	box-sizing: border-box;
 	margin: 20px 0;
 }
 
+label, input:not([type="checkbox"]) {
+	width: 100%;
+}
+
 input, textarea, fieldset {
-	font-size: 1.3em;
+	font-size: 1.2rem;
 	border-color: #65ffc9;
+	background: inherit;
 	background-color: #f1f4f321;
 	color: #f1f4f3;
 	outline: none;
@@ -109,27 +121,49 @@ textarea {
 	resize: vertical;
 }
 
-input {
-	width: 100%;
+input, textarea{
 	border: none;
 	border-bottom: 1px solid #65ffc9;
-	padding: 10px;
+	padding: 10px 20px;
 	margin: 10px 0;
 }
 
-	fieldset {
-	display: flex;
-	flex-direction: row;
-	align-content: space-evenly;
-	}
+input::placeholder, textarea::placeholder {
+	color: #f1f4f3CC;
+}
 
 	label {
-		padding-bottom: 30px;
+		margin: 0 20px;
 	}
-	input [type="checkbox"] {
+
+	input[type="checkbox"] {
 		accent-color: #65ffc9;	
+	}
+
+	button {
+		padding: 16px 32px;
+		border-radius: 6px;
+		color: #f1f4f3;
+		background-color: #02a098;
+		border: none;
+		box-shadow: 1 1 15px #000000;
+	}
+
+	button:hover {
+		background-color: #05d6d6;
+		color: #515151;
 
 	}
-	.terms {
-		display: inline;
+
+	/* FOOTER */
+
+	footer {
+		display: flex;
+		width: 100%;
+		height: 200px;
+		background: linear-gradient(transparent, #000000);
+		justify-content: center;
+		align-items: center;
 	}
+	
+	

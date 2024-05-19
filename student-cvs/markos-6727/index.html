@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="/script.js"></script>
   <title>Mi Perfil HTML</title>
 </head>
 
@@ -27,66 +28,75 @@
   </header>
 
   <main>
-    <section class="section-about">
-      <div class="about">
-        <h2>Acerca de mi:</h2>
-  
-        <p>
-          Me defino como una persona
-          <em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
-          incursionar y destacarme en múltiples campos laborales, desempeñándome
-          y relacionándome con todas las escalas jerárquicas de las
-          organizaciones a las que he pertenecido a lo largo de mi vida
-          profesional.
-        </p>
-  
-        <p>
-          Mi proceso de desarrollo personal y profesional es un proyecto que se
-          mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
-          aplicación y reforzamiento lo cual disfruto mucho. Dentro del set de
-          habilidades blandas que me caracterizan puedo destacar la empatía, la
-          resiliencia, el pensamiento crítico y lógico en otras.
-        </p>
-      </div>
-  
-      <h2>Estudios Formales:</h2>
-  
-      <ul>
-        <li>
-          Técnico Superior Universitario en Higiene y Seguridad Indutrial.
-        </li>
-        <li>Histotecnólogo.</li>
-        <li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
-      </ul>
-  
-      <h2>Otros Estudios:</h2>
-  
-      <ul>
-        <li>Diseño Grafico.</li>
-        <li>Marketing.</li>
-        <li>Programación.</li>
-      </ul>
-  
-      <h2>Tecnologías:</h2>
-  
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-      </ul>
-    </section>
+    <div class="section-about">
+      <section class="about">
+        <div>
+          <h2>Acerca de mi:</h2>
+    
+          <p>
+            Me defino como una persona
+            <em>proactiva, autodidacta y polivalente</em>; lo que me ha llevado a
+            incursionar y destacarme en múltiples campos laborales, desempeñándome
+            y relacionándome con todas las escalas jerárquicas de las
+            organizaciones a las que he pertenecido a lo largo de mi vida
+            profesional.
+          </p>
+    
+          <p>
+            Mi proceso de desarrollo personal y profesional es un proyecto que se
+            mantiene en un ciclo permanente de adquisición de nuevo conocimiento,
+            aplicación y reforzamiento lo cual disfruto mucho. 
+          </p>
+          <p>
+            Dentro del set de
+            habilidades blandas que me caracterizan puedo destacar la empatía, la
+            resiliencia, el pensamiento crítico y lógico en otras.
+          </p>
+        </div>
+      </section>
+    
+      <section>
+        <h2>Estudios Formales:</h2>
+    
+        <ul>
+          <li>
+            Técnico Superior Universitario en Higiene y Seguridad Industrial.
+          </li>
+          <li>Histotecnólogo.</li>
+          <li>Técnico en Rescate y Emergencias Prehospitalarias TREPH.</li>
+        </ul>
+    
+        <h2>Otros Estudios:</h2>
+    
+        <ul>
+          <li>Diseño Grafico.</li>
+          <li>Marketing.</li>
+          <li>Programación.</li>
+        </ul>
+    
+        <h2>Tecnologías:</h2>
+    
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </section>  
+    </div>
     <section class="form-container">
       <form id="form">
+
         <h1 class="title-contact">Contactame</h1>
+
         <div class="form-group">
           <label for="name"> Nombre:
-            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <input type="text" id="name" name="name" placeholder="John Doe">
           </label>
         </div>
         <div class="form-group">
-          <label for="name"> Email:
-            <input type="email" id="email" name="email" placeholder="johndoe@mail.com" required>
+          <label for="email"> Email:
+            <input type="email" id="email" name="email" placeholder="johndoe@mail.com">
           </label>
         </div>
         <div class="form-group">
@@ -98,26 +108,40 @@
         <div class="form-group">
           <fieldset>
             <legend>Tipo de Proyecto:</legend>
-            <input type="checkbox" id="website" name="website"><label for="wesite">Página Web</label>
-            <input type="checkbox" id="webapp" name="webapp"><label for="webapp">Aplicación Web</label>
-            <input type="checkbox" id="design" name="design"><label for="diseño">Diseño Gráfico</label>
+            <label for="website">Página Web
+              <input type="checkbox" id="website" name="website">
+            </label>
+            <label for="webapp">Aplicación Web
+              <input type="checkbox" id="webapp" name="webapp">
+            </label>
+            <label for="design">Diseño Gráfico
+              <input type="checkbox" id="design" name="design">
+            </label>
           </fieldset>
         </div>
         <label for="description"> Descripción:
           <div class="form-group">
-            <textarea name="description id=" description" rows="5"></textarea>
+            <textarea name="description id=" description" rows="5" placeholder="Describe brevemente tu proyecto"></textarea>
           </div>
         </label>
         <div class="form-group">
-          <div class="terms">
+          <label class="terms"> Acepto los términos y condiciones
             <input type="checkbox">
-            <span>Acepto los términos y condiciones</span>
-          </div>
-          <button>Enviar</button>
+          </label>
         </div>
+        <button>Enviar</button>
+        <p id="msgerror"></p>
       </form>
     </section>
   </main>
+  <footer>
+    <div class="link">
+      <div class="link-item">
+        <p>Diseño y Maquetación Marcos Rosario 2024.</p>
+      </div>
+
+    </div>
+  </footer>
 </body>
 
 </html>
